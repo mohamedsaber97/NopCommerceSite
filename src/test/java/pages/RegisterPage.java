@@ -39,6 +39,15 @@ public class RegisterPage extends TestBase {
     @FindBy(id = "register-button")
     WebElement registerBtn;
 
+    @FindBy(className = "result")
+    WebElement resultMsg;
+
+    @FindBy(linkText = "Log out")
+    WebElement logOutBtn;
+
+    @FindBy(linkText = "Log in")
+    WebElement loginBtn;
+
 
     public void selectDate() {
         Select dayDropdown = new Select(day);
@@ -51,16 +60,30 @@ public class RegisterPage extends TestBase {
 
     public void fillData() {
         gender.click();
-        firstName.sendKeys("mohamed");
-        lastName.sendKeys("saber");
+        firstName.sendKeys("test");
+        lastName.sendKeys("user600");
         selectDate();
-        email.sendKeys("msaber9765@gmail.com");
-        company.sendKeys("Awamer");
+        email.sendKeys("test600@gmail.com");
+        company.sendKeys("Awamer600");
         password.sendKeys("123456");
         confirmPassword.sendKeys("123456");
     }
 
     public void sendData() {
         registerBtn.click();
+    }
+
+    public void checkResultMsg() {
+        boolean display = resultMsg.isDisplayed();
+        System.out.println("display result msg is :  " + display);
+    }
+
+    public void logOut() {
+        logOutBtn.click();
+    }
+
+    public LoginPage navigateToLoginPage() throws IOException {
+        loginBtn.click();
+        return new LoginPage();
     }
 }

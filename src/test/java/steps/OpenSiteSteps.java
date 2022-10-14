@@ -27,4 +27,6 @@ public class OpenSiteSteps extends TestBase {
         registerPage = openSitePage.navigateToRegisterPage();
         System.out.println("we navigate to register page");
     }
+
+
 }

@@ -20,4 +20,5 @@ public class OpenSitePage extends TestBase {
         registerBtn.click();
         return new RegisterPage();
     }
+
 }
