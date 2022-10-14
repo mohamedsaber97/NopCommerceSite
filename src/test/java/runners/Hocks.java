@@ -19,6 +19,6 @@ public class Hocks extends TestBase {
     @After
     public void afterTestCase() {
         System.out.println("----------test is finished-----------");
-        driver.quit();
+        driver.close();
     }
 }
