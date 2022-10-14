@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-public class LoginPage extends TestBase {
-    public LoginPage() throws IOException {
+public class P3_LoginPage extends TestBase {
+    public P3_LoginPage() throws IOException {
         PageFactory.initElements(driver, this);
     }
 
@@ -17,11 +17,11 @@ public class LoginPage extends TestBase {
     @FindBy(id = "Password")
     WebElement password;
 
-    @FindBy(className = "button-1 login-button")
+    @FindBy(xpath = "//*[contains(@class , 'login-button')]")
     WebElement loginBtn;
 
     public void fillData() {
-        email.sendKeys("test600@gmail.com");
+        email.sendKeys("tt22@gmail.com");
         password.sendKeys("123456");
     }
 

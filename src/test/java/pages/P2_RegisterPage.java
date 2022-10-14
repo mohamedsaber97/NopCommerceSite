@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
 
-public class RegisterPage extends TestBase {
+public class P2_RegisterPage extends TestBase {
 
-    public RegisterPage() throws IOException {
+    public P2_RegisterPage() throws IOException {
         PageFactory.initElements(driver, this);
     }
 
@@ -61,10 +61,10 @@ public class RegisterPage extends TestBase {
     public void fillData() {
         gender.click();
         firstName.sendKeys("test");
-        lastName.sendKeys("user600");
+        lastName.sendKeys("user22");
         selectDate();
-        email.sendKeys("test600@gmail.com");
-        company.sendKeys("Awamer600");
+        email.sendKeys("tt22@gmail.com");
+        company.sendKeys("Awamer22");
         password.sendKeys("123456");
         confirmPassword.sendKeys("123456");
     }
@@ -82,8 +82,8 @@ public class RegisterPage extends TestBase {
         logOutBtn.click();
     }
 
-    public LoginPage navigateToLoginPage() throws IOException {
+    public P3_LoginPage navigateToLoginPage() throws IOException {
         loginBtn.click();
-        return new LoginPage();
+        return new P3_LoginPage();
     }
 }

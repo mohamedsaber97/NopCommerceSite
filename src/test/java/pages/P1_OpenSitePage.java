@@ -7,18 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-public class OpenSitePage extends TestBase {
+public class P1_OpenSitePage extends TestBase {
 
-    public OpenSitePage() throws IOException {
+    public P1_OpenSitePage() throws IOException {
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(linkText = "Register")
     WebElement registerBtn;
 
-    public RegisterPage navigateToRegisterPage() throws IOException {
+    public P2_RegisterPage navigateToRegisterPage() throws IOException {
         registerBtn.click();
-        return new RegisterPage();
+        return new P2_RegisterPage();
     }
 
 }

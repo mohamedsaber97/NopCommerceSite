@@ -3,18 +3,18 @@ package steps;
 import base.TestBase;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import pages.OpenSitePage;
-import pages.RegisterPage;
+import pages.P1_OpenSitePage;
+import pages.P2_RegisterPage;
 
 import java.io.IOException;
 
-public class OpenSiteSteps extends TestBase {
+public class S1_OpenSiteSteps extends TestBase {
 
-    public OpenSiteSteps() throws IOException {
+    public S1_OpenSiteSteps() throws IOException {
     }
 
-    OpenSitePage openSitePage;
-    RegisterPage registerPage;
+    P1_OpenSitePage p1OpenSitePage;
+    P2_RegisterPage p2Register;
 
     @Given("user open browser")
     public void userOpenBrowser() {
@@ -23,8 +23,8 @@ public class OpenSiteSteps extends TestBase {
 
     @And("user navigate to register page")
     public void userNavigateToRegisterPage() throws IOException {
-        openSitePage = new OpenSitePage();
-        registerPage = openSitePage.navigateToRegisterPage();
+        p1OpenSitePage = new P1_OpenSitePage();
+        p2Register = p1OpenSitePage.navigateToRegisterPage();
         System.out.println("we navigate to register page");
     }
 
