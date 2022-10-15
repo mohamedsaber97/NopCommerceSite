@@ -1,4 +1,4 @@
-@auth
+@login
 Feature: user should be able to login into system
 
   Scenario: User could log in with valid email and password

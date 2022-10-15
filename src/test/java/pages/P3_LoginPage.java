@@ -20,6 +20,9 @@ public class P3_LoginPage extends TestBase {
     @FindBy(xpath = "//*[contains(@class , 'login-button')]")
     WebElement loginBtn;
 
+    @FindBy(linkText = "Forgot password?")
+    WebElement forgotPassword;
+
     public void fillData() {
         email.sendKeys("msaber9765@gmail.com");
         password.sendKeys("123456");
@@ -27,5 +30,10 @@ public class P3_LoginPage extends TestBase {
 
     public void sendData() {
         loginBtn.click();
+    }
+
+    public P4_ForgetPasswordPage navigateToForgetPage() throws IOException {
+        forgotPassword.click();
+        return new P4_ForgetPasswordPage();
     }
 }
