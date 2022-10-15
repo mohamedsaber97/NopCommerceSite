@@ -16,9 +16,17 @@ public class P1_OpenSitePage extends TestBase {
     @FindBy(linkText = "Register")
     WebElement registerBtn;
 
+    @FindBy(linkText = "Log in")
+    WebElement loginBtn;
+
     public P2_RegisterPage navigateToRegisterPage() throws IOException {
         registerBtn.click();
         return new P2_RegisterPage();
+    }
+
+    public P3_LoginPage navigateToLoginPage() throws IOException {
+        loginBtn.click();
+        return new P3_LoginPage();
     }
 
 }

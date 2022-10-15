@@ -7,4 +7,3 @@ Feature: user should be able to sign up into system
     And click on register button
     Then success message is displayed
     And user log out from system
-    And user navigate to login page

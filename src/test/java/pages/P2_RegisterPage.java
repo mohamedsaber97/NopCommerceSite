@@ -45,10 +45,6 @@ public class P2_RegisterPage extends TestBase {
     @FindBy(linkText = "Log out")
     WebElement logOutBtn;
 
-    @FindBy(linkText = "Log in")
-    WebElement loginBtn;
-
-
     public void selectDate() {
         Select dayDropdown = new Select(day);
         dayDropdown.selectByIndex(1);
@@ -82,8 +78,4 @@ public class P2_RegisterPage extends TestBase {
         logOutBtn.click();
     }
 
-    public P3_LoginPage navigateToLoginPage() throws IOException {
-        loginBtn.click();
-        return new P3_LoginPage();
-    }
 }

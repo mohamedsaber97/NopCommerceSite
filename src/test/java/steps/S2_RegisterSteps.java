@@ -4,7 +4,6 @@ import base.TestBase;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.P3_LoginPage;
 import pages.P2_RegisterPage;
 
 import java.io.IOException;
@@ -15,7 +14,6 @@ public class S2_RegisterSteps extends TestBase {
     }
 
     P2_RegisterPage p2Register;
-    P3_LoginPage p3Login;
 
     @When("user fill register data")
     public void userFillFirstNameData() throws IOException {
@@ -42,13 +40,5 @@ public class S2_RegisterSteps extends TestBase {
         p2Register = new P2_RegisterPage();
         p2Register.logOut();
     }
-
-    @And("user navigate to login page")
-    public void userNavigateToLoginPage() throws IOException {
-        p2Register = new P2_RegisterPage();
-        p3Login = p2Register.navigateToLoginPage();
-        System.out.println("we navigate to login page");
-    }
-
 
 }
