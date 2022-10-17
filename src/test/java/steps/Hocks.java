@@ -1,4 +1,4 @@
-package runners;
+package steps;
 
 import base.TestBase;
 import io.cucumber.java.After;
