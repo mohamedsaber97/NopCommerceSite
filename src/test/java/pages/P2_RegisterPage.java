@@ -60,7 +60,7 @@ public class P2_RegisterPage extends TestBase {
         lastName.sendKeys("user22");
         selectDate();
         email.sendKeys("tt22@gmail.com");
-        company.sendKeys("Awamer22");
+        company.sendKeys("camp22");
         password.sendKeys("123456");
         confirmPassword.sendKeys("123456");
     }
@@ -71,7 +71,7 @@ public class P2_RegisterPage extends TestBase {
 
     public void checkResultMsg() {
         boolean display = resultMsg.isDisplayed();
-        System.out.println("display result msg is :  " + display);
+        System.out.println("-----display result msg is :  " + display + "-----");
     }
 
     public void logOut() {

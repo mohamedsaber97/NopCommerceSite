@@ -23,6 +23,9 @@ public class P3_LoginPage extends TestBase {
     @FindBy(linkText = "Forgot password?")
     WebElement forgotPassword;
 
+    @FindBy(linkText = "Electronics")
+    WebElement categoryName;
+
     public void fillData() {
         email.sendKeys("msaber9765@gmail.com");
         password.sendKeys("123456");
@@ -30,6 +33,12 @@ public class P3_LoginPage extends TestBase {
 
     public void sendData() {
         loginBtn.click();
+    }
+
+    public P5_HomePage checkHomePageDisplayed() throws IOException {
+        boolean display = categoryName.isDisplayed();
+        System.out.println("-----electronics category name in home is displayed as :  " + display + "-----");
+        return new P5_HomePage();
     }
 
     public P4_ForgetPasswordPage navigateToForgetPage() throws IOException {

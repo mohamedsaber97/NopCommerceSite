@@ -1,6 +1,6 @@
-@forget
 Feature: user should be able to reset his forgotten password
 
+  @forget
   Scenario: User could reset his/her password successfully
     Given user open browser
     And user navigate to login page
