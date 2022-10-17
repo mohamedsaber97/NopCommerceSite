@@ -24,4 +24,16 @@ public class S5_HomeSteps extends TestBase {
         p5_homePage = new P5_HomePage();
         p5_homePage.changeCurrency();
     }
+
+    @And("user can can hover on main category and select sub category")
+    public void userCanCanHoverOnMainCategoryAndSelectSubCategory() throws IOException, InterruptedException {
+        p5_homePage = new P5_HomePage();
+        p5_homePage.selectCategory();
+    }
+
+    @And("user can select color to filter products")
+    public void userCanSelectColorToFilterProducts() throws IOException {
+        p5_homePage = new P5_HomePage();
+        p5_homePage.filterWithColor();
+    }
 }

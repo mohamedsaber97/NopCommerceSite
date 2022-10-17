@@ -17,8 +17,9 @@ public class Hocks extends TestBase {
     }
 
     @After
-    public void afterTestCase() {
+    public void afterTestCase() throws InterruptedException {
         System.out.println("----------test is finished-----------");
+        Thread.sleep(1000);
         driver.close();
     }
 }
