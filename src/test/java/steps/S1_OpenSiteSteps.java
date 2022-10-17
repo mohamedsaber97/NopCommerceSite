@@ -27,14 +27,12 @@ public class S1_OpenSiteSteps extends TestBase {
     public void userNavigateToRegisterPage() throws IOException {
         p1OpenSitePage = new P1_OpenSitePage();
         p2Register = p1OpenSitePage.navigateToRegisterPage();
-        System.out.println("-----we navigate to register page-----");
     }
 
     @And("user navigate to login page")
     public void userNavigateToLoginPage() throws IOException {
         p1OpenSitePage = new P1_OpenSitePage();
         p3Login = p1OpenSitePage.navigateToLoginPage();
-        System.out.println("-----we navigate to login page-----");
     }
 
 }

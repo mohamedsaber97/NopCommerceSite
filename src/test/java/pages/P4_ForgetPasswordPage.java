@@ -25,10 +25,12 @@ public class P4_ForgetPasswordPage extends TestBase {
 
     public void fillData() {
         email.sendKeys("msaber9765@gmail.com");
+        System.out.println("-----all forget data are filled-----");
     }
 
     public void sendData() {
         recoverBtn.click();
+        System.out.println("-----all forget data are sent-----");
     }
 
     public void checkMessage() {

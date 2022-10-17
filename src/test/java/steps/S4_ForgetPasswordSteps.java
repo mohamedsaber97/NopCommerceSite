@@ -17,14 +17,12 @@ public class S4_ForgetPasswordSteps extends TestBase {
     public void userFillForgetData() throws IOException {
         p4_forgetPasswordPage = new P4_ForgetPasswordPage();
         p4_forgetPasswordPage.fillData();
-        System.out.println("-----all forget data are filled-----");
     }
 
     @And("click on recover button")
     public void clickOnRecoverButton() throws IOException {
         p4_forgetPasswordPage = new P4_ForgetPasswordPage();
         p4_forgetPasswordPage.sendData();
-        System.out.println("-----all forget data are sent-----");
         p4_forgetPasswordPage.checkMessage();
     }
 }

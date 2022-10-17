@@ -1,6 +1,6 @@
+@regression
 Feature: user should be able to login into system
 
-  @login
   Scenario: User could log in with valid email and password
     Given user open browser
     And user navigate to login page

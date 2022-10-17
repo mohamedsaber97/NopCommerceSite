@@ -19,14 +19,12 @@ public class S2_RegisterSteps extends TestBase {
     public void userFillFirstNameData() throws IOException {
         p2Register = new P2_RegisterPage();
         p2Register.fillData();
-        System.out.println("-----all register data are filled-----");
     }
 
     @And("click on register button")
     public void clickOnRegisterButton() throws IOException {
         p2Register = new P2_RegisterPage();
         p2Register.sendData();
-        System.out.println("-----all register data are sent-----");
     }
 
     @Then("success message is displayed")
@@ -39,7 +37,6 @@ public class S2_RegisterSteps extends TestBase {
     public void userLogOutFromSystem() throws IOException {
         p2Register = new P2_RegisterPage();
         p2Register.logOut();
-        System.out.println("-----user log out from the system-----");
     }
 
 }

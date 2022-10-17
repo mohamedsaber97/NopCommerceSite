@@ -22,28 +22,24 @@ public class S3_LoginSteps extends TestBase {
     public void userFillLoginData() throws IOException {
         p3Login = new P3_LoginPage();
         p3Login.fillData();
-        System.out.println("-----all login data are filled-----");
     }
 
     @And("click on login button")
     public void clickOnLoginButton() throws IOException {
         p3Login = new P3_LoginPage();
         p3Login.sendData();
-        System.out.println("-----all login data are sent-----");
     }
 
     @Then("home page is opened")
     public void homePageIsOpened() throws IOException {
         p3Login = new P3_LoginPage();
         p5_homePage = p3Login.checkHomePageDisplayed();
-        System.out.println("-----home page is opened-----");
     }
 
     @And("user navigate to forget page")
     public void userNavigateToForgetPage() throws IOException {
         p3Login = new P3_LoginPage();
         p4_forgetPasswordPage = p3Login.navigateToForgetPage();
-        System.out.println("-----we navigate to forget page-----");
     }
 
 

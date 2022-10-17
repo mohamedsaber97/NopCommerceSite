@@ -1,6 +1,6 @@
+@regression
 Feature: user should be able to sign up into system
 
-  @register
   Scenario: user could register with valid data
     Given user open browser
     And user navigate to register page

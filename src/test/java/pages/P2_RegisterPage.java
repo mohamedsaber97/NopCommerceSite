@@ -57,16 +57,18 @@ public class P2_RegisterPage extends TestBase {
     public void fillData() {
         gender.click();
         firstName.sendKeys("test");
-        lastName.sendKeys("user22");
+        lastName.sendKeys("user");
         selectDate();
-        email.sendKeys("tt22@gmail.com");
-        company.sendKeys("camp22");
+        email.sendKeys("ms6532210@gmail.com");
+        company.sendKeys("camp");
         password.sendKeys("123456");
         confirmPassword.sendKeys("123456");
+        System.out.println("-----all register data are filled-----");
     }
 
     public void sendData() {
         registerBtn.click();
+        System.out.println("-----all register data are sent-----");
     }
 
     public void checkResultMsg() {
@@ -76,6 +78,7 @@ public class P2_RegisterPage extends TestBase {
 
     public void logOut() {
         logOutBtn.click();
+        System.out.println("-----user logout from the system-----");
     }
 
 }
