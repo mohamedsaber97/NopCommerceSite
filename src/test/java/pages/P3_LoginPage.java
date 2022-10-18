@@ -27,7 +27,7 @@ public class P3_LoginPage extends TestBase {
     WebElement categoryName;
 
     public void fillData() {
-        email.sendKeys("ms6532210@gmail.com");
+        email.sendKeys("msaber9765@gmail.com");
         password.sendKeys("123456");
         System.out.println("-----all login data are filled-----");
     }

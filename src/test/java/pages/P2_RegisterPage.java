@@ -59,7 +59,7 @@ public class P2_RegisterPage extends TestBase {
         firstName.sendKeys("test");
         lastName.sendKeys("user");
         selectDate();
-        email.sendKeys("ms6532210@gmail.com");
+        email.sendKeys("msaber9765@gmail.com");
         company.sendKeys("camp");
         password.sendKeys("123456");
         confirmPassword.sendKeys("123456");

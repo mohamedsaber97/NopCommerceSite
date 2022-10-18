@@ -43,7 +43,7 @@ Feature: user should be able to access home system features
     And user can hover on main category and select sub category
     And user can select digital tag
 
-  Scenario: logged user could select different tags
+  Scenario: logged user could add different products to cart
     Given user open browser
     And user navigate to login page
     When user fill login data
